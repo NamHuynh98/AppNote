@@ -1,0 +1,44 @@
+.Login{
+    width: 100%;
+    padding-top: 10em;
+    
+}
+.Login .wrap-login{
+    min-width: 350px;
+    box-sizing: border-box;
+    width: 30%;
+    border: none;
+    height: 20em;
+    border-radius: 10px;
+    padding: 60px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Login .input input{
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+    height: 30px;
+    margin: 0 0 5px 0
+}
+.Login .input div{
+    padding: 0 0 10px 0;
+}
+.Login .submit{
+    margin: 20px 0 10px 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+}
+.Login .submit:hover{
+    box-shadow: none;
+}
+@media only screen and (max-width: 500px){
+    .Login .wrap-login{
+      width: 100%;
+      box-shadow:none;
+    }
+  }

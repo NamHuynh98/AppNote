@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Stylish');
+.edit-form{
+    width: 50%;
+    /* height: 20em; */
+    border-radius:  20px;
+    border: solid 1px #A5A6A6;
+    margin: 5% auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.edit-form h2{
+    font-family: 'Stylish', sans-serif;
+    margin: 0px;
+    text-align: center;
+}
+.edit-form label{
+    font-family: 'Stylish', sans-serif;
+    font-weight: bolder;
+}
+.edit-form input[type=text],.edit-form textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  @media only screen and (max-width: 700px){
+    .edit-form{
+      width: 100%;
+      box-shadow:none;
+      border:none;
+    }
+  }
+ 

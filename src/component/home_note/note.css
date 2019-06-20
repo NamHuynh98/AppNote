@@ -1,0 +1,103 @@
+body {
+  box-sizing: border-box;
+  background: #F8F9FA;
+}
+
+
+
+
+/* elm-note */
+.notes .elm-note {
+  padding: 20px 40px 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.notes .note-item {
+  min-width: 200px;
+  width: 23%;
+  height: 10em;
+  border: solid 1px #A5A6A6;
+  border-radius: 10px;
+  background: #ffffff;
+  margin: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.notes .note-item:hover {
+  box-shadow: none;
+  transition: box-shadow 0.4s;
+}
+
+/* setting */
+
+.setting {
+  opacity: 0.6;
+  overflow: hidden;
+  top: 20px;
+  right: 0px;
+  position: fixed;
+  float: right;
+  text-align: center;
+  height: 50px;
+  padding: 5px;
+  width: 50px;
+  background: #A5A6A6;
+  border-radius: 50px;
+ 
+}
+
+.open {
+  animation: openSetting 2s forwards;
+}
+.closess {
+  animation: closeSetting 2s forwards;
+}
+
+@keyframes openSetting {
+  from {height: 50px;}
+  to {height: 135px;}
+}
+@keyframes closeSetting {
+  from {height: 135px;}
+  to {height:50px ;}
+}
+.account, .logout, .setting-account {
+  min-height: 40px;
+  height: 32%;
+  border-radius: 50%;
+}
+
+.setting:hover{
+  opacity: 1;
+  transition: all 0.5s;
+}
+.account:hover, .logout:hover, .setting-account:hover {
+  background: #F8F9FA;
+  transition: all 0.5s;
+  
+}
+
+.account svg, .logout svg, .setting-account svg {
+  margin-top: 32%;
+}
+/* pagination */
+.pagi-page{
+  width: 100%;
+  justify-content: center;
+}
+@media only screen and (max-width: 400px){
+  .notes{
+    position: relative;
+    top: 50px;
+  }
+  .notes .note-item{
+    width: 100%;
+  }
+  .notes .elm-note{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+}
